@@ -41,7 +41,7 @@ ZSH_THEME="ys"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow osx brew python virtualenv pip vagrant colored-man sublime copydir ruby rvm mosh tmux tmuxinator)
+plugins=(git git-flow osx brew python virtualenv pip vagrant colored-man sublime copydir ruby rvm mosh tmux tmuxinator docker)
 
 source $ZSH/oh-my-zsh.sh
 
