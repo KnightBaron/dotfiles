@@ -61,6 +61,7 @@ set expandtab
 set autoindent
 set smartindent
 set showmatch
+set mouse=a
 
 let mapleader=","
 
