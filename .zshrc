@@ -41,23 +41,19 @@ ZSH_THEME="ys"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow osx brew python virtualenv pip vagrant colored-man sublime copydir ruby rvm mosh tmux tmuxinator docker)
+plugins=(git git-flow osx brew python virtualenv pip vagrant colored-man sublime copydir \
+    ruby rvm mosh tmux tmuxinator docker)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
 # RVM
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Homebrew
 export PATH=$(brew --prefix)/bin:$PATH
 export MANPATH=/Users/knightbaron/.homebrew/share/man:$MANPATH
-
-# Python share
-#export PATH=$PATH:$(brew --prefix)/share/python
-#export PATH=$PATH:$(brew --prefix)/share/python3
 
 # Node
 #export PATH=$PATH:$(brew --prefix)/share/npm/bin
