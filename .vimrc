@@ -1,56 +1,61 @@
 " Vundle
-set nocompatible               " be iMproved
-filetype off                   " required!
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-set rtp+=~/.vim/bundle/vundle/
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle
-" required! 
-Plugin 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
 " My Bundles here:
-Plugin 'git://github.com/ciaranm/inkpot.git'
+"Plugin 'git://github.com/ciaranm/inkpot.git'
 Plugin 'git://github.com/chriskempson/vim-tomorrow-theme.git'
-Plugin 'git://github.com/scrooloose/nerdcommenter.git'
-Plugin 'git://github.com/scrooloose/nerdtree.git'
-Plugin 'git://github.com/msanders/snipmate.vim.git'
-Plugin 'git://github.com/ervandew/supertab.git'
-Plugin 'git://github.com/scrooloose/syntastic.git'
-Plugin 'git://github.com/tpope/vim-surround.git'
-Plugin 'git://github.com/vim-scripts/taglist.vim.git'
+"Plugin 'git://github.com/scrooloose/nerdcommenter.git'
+"Plugin 'git://github.com/scrooloose/nerdtree.git'
+"Plugin 'git://github.com/msanders/snipmate.vim.git'
+"Plugin 'git://github.com/ervandew/supertab.git'
+"Plugin 'git://github.com/scrooloose/syntastic.git'
+"Plugin 'git://github.com/tpope/vim-surround.git'
+"Plugin 'git://github.com/vim-scripts/taglist.vim.git'
 "Plugin 'git://github.com/webframp/pysmell.vim.git'
 "Plugin 'git://github.com/davidhalter/jedi-vim.git'
-Plugin 'git://github.com/fholgado/minibufexpl.vim.git'
+"Plugin 'git://github.com/fholgado/minibufexpl.vim.git'
 " original repos on github
-Plugin 'tpope/vim-fugitive'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'tpope/vim-rails.git'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'Lokaltog/vim-easymotion'
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Plugin 'tpope/vim-rails.git'
 Plugin 'bling/vim-airline'
-Plugin 'airblade/vim-gitgutter'
-" Plugin "mattn/emmet-vim"
+"Plugin 'airblade/vim-gitgutter'
+" Plugin 'mattn/emmet-vim'
 " vim-scripts repos
-Plugin 'L9'
-Plugin 'FuzzyFinder'
-Plugin 'promela.vim'
+"Plugin 'L9'
+"Plugin 'FuzzyFinder'
+"Plugin 'promela.vim'
 " non github repos
 "Plugin 'git://git.wincent.com/command-t.git'
 " ...
 
-call vundle#end()
-filetype plugin indent on     " required!
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
 "
 " Brief help
-" :PluginList          - list configured bundles
-" :PluginInstall(!)    - install(update) bundles
-" :PluginSearch(!) foo - search(or refresh cache first) for foo
-" :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList          - list configured plugins
+" :PluginInstall(!)    - install (update) plugins
+" :PluginSearch(!) foo - search (or refresh cache first) for foo
+" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+" Put your non-Plugin stuff after this line
 
-set nocompatible
+"set nocompatible
 set ignorecase
 set nowrap
 set number
@@ -61,13 +66,13 @@ set expandtab
 set autoindent
 set smartindent
 set showmatch
-set mouse=a
+set backspace=indent,eol,start  " Restore common backspace behavior
 
 let mapleader=","
 
 colorscheme Tomorrow-Night
 set guifont=Monaco:h13
-set transparency=5
+"set transparency=5
 
 " window
 "nmap <leader>sw<left>  :topleft  vnew<CR>
